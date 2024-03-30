@@ -1,119 +1,114 @@
 package total_customer_bank_account;
 
 public class TotalAccounts {
-	
 
-	private Long serialNo;
-	
-	private String firstName;
-	
-	private String lastName;
+  private Long serialNo;
 
-	private String mobileNumber;
+  private String firstName;
 
-	private String emailId;
+  private String lastName;
 
-	private String atmPin;
+  private String mobileNumber;
 
-	private String customerId;
+  private String emailId;
 
-	private String cardNo;
+  private String atmPin;
 
-	private String accountType;
+  private String customerId;
 
-	private String balance;
+  private String cardNo;
 
-	private String accountStatus;
+  private String accountType;
 
-	public String getLastName() {
-		return lastName;
-	}
+  private String balance;
 
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
+  private String accountStatus;
 
-	public Long getSerialNo() {
-		return serialNo;
-	}
+  public String getLastName() {
+    return lastName;
+  }
 
-	public void setSerialNo(Long serialNo) {
-		this.serialNo = serialNo;
-	}
+  public void setLastName(String lastName) {
+    this.lastName = lastName;
+  }
 
-	public String getFirstName() {
-		return firstName;
-	}
+  public Long getSerialNo() {
+    return serialNo;
+  }
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
+  public void setSerialNo(Long serialNo) {
+    this.serialNo = serialNo;
+  }
 
-	public String getMobileNumber() {
-		return mobileNumber;
-	}
+  public String getFirstName() {
+    return firstName;
+  }
 
-	public void setMobileNumber(String mobileNumber) {
-		this.mobileNumber = mobileNumber;
-	}
+  public void setFirstName(String firstName) {
+    this.firstName = firstName;
+  }
 
-	public String getEmailId() {
-		return emailId;
-	}
+  public String getMobileNumber() {
+    return mobileNumber;
+  }
 
-	public void setEmailId(String emailId) {
-		this.emailId = emailId;
-	}
+  public void setMobileNumber(String mobileNumber) {
+    this.mobileNumber = mobileNumber;
+  }
 
-	public String getAtmPin() {
-		return atmPin;
-	}
+  public String getEmailId() {
+    return emailId;
+  }
 
-	public void setAtmPin(String atmPin) {
-		this.atmPin = atmPin;
-	}
+  public void setEmailId(String emailId) {
+    this.emailId = emailId;
+  }
 
-	public String getCustomerId() {
-		return customerId;
-	}
+  public String getAtmPin() {
+    return atmPin;
+  }
 
-	public void setCustomerId(String customerId) {
-		this.customerId = customerId;
-	}
+  public void setAtmPin(String atmPin) {
+    this.atmPin = atmPin;
+  }
 
-	public String getCardNo() {
-		return cardNo;
-	}
+  public String getCustomerId() {
+    return customerId;
+  }
 
-	public void setCardNo(String cardNo) {
-		this.cardNo = cardNo;
-	}
+  public void setCustomerId(String customerId) {
+    this.customerId = customerId;
+  }
 
-	public String getAccountType() {
-		return accountType;
-	}
+  public String getCardNo() {
+    return cardNo;
+  }
 
-	public void setAccountType(String accountType) {
-		this.accountType = accountType;
-	}
+  public void setCardNo(String cardNo) {
+    this.cardNo = cardNo;
+  }
 
-	public String getBalance() {
-		return balance;
-	}
+  public String getAccountType() {
+    return accountType;
+  }
 
-	public void setBalance(String balance) {
-		this.balance = balance;
-	}
+  public void setAccountType(String accountType) {
+    this.accountType = accountType;
+  }
 
-	public String getAccountStatus() {
-		return accountStatus;
-	}
+  public String getBalance() {
+    return balance;
+  }
 
-	public void setAccountStatus(String accountStatus) {
-		this.accountStatus = accountStatus;
-	}
-	
+  public void setBalance(String balance) {
+    this.balance = balance;
+  }
 
-	
+  public String getAccountStatus() {
+    return accountStatus;
+  }
 
+  public void setAccountStatus(String accountStatus) {
+    this.accountStatus = accountStatus;
+  }
 }

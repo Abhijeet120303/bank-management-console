@@ -1,41 +1,34 @@
 package dto;
 
-
 public class GetTotalBalanceResponse {
-	
-	private String status;
-	
-	private String message;
-	
-	private int balance;
 
-	public String getStatus() {
-		return status;
-	}
+  private String status;
 
-	public void setStatus(String status) {
-		this.status = status;
-	}
+  private String message;
 
-	public String getMessage() {
-		return message;
-	}
+  private int balance;
 
-	public void setMessage(String message) {
-		this.message = message;
-	}
+  public String getStatus() {
+    return status;
+  }
 
-	public int getBalance() {
-		return balance;
-	}
+  public void setStatus(String status) {
+    this.status = status;
+  }
 
-	public void setBalance(int balance) {
-		this.balance = balance;
-	}
-	
-	
+  public String getMessage() {
+    return message;
+  }
 
-	
-	
+  public void setMessage(String message) {
+    this.message = message;
+  }
 
+  public int getBalance() {
+    return balance;
+  }
+
+  public void setBalance(int balance) {
+    this.balance = balance;
+  }
 }

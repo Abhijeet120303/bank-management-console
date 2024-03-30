@@ -1,48 +1,38 @@
 package dto;
 
 public class CustomerDepositAmountRequest {
-	
-//	private double amount;
-//	
-//	private String pin;
-	
-	
-	private String balance;
-	
-	private String atmPin;
-	
-	private String cardNo;
-	
-	
 
+  //	private double amount;
+  //
+  //	private String pin;
 
-	public String getCardNo() {
-		return cardNo;
-	}
+  private String balance;
 
-	public void setCardNo(String cardNo) {
-		this.cardNo = cardNo;
-	}
+  private String atmPin;
 
-	public String getBalance() {
-		return balance;
-	}
+  private String cardNo;
 
-	public void setBalance(String depositAmount) {
-		this.balance = depositAmount;
-	}
+  public String getCardNo() {
+    return cardNo;
+  }
 
-	public String getAtmPin() {
-		return atmPin;
-	}
+  public void setCardNo(String cardNo) {
+    this.cardNo = cardNo;
+  }
 
-	public void setAtmPin(String atmPin) {
-		this.atmPin = atmPin;
-	}
+  public String getBalance() {
+    return balance;
+  }
 
+  public void setBalance(String depositAmount) {
+    this.balance = depositAmount;
+  }
 
+  public String getAtmPin() {
+    return atmPin;
+  }
 
-	
-	
-
+  public void setAtmPin(String atmPin) {
+    this.atmPin = atmPin;
+  }
 }

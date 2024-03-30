@@ -1,37 +1,34 @@
 package dto;
 
-
 public class AddAccountResponse {
-	
-	private String status;
-	
-	private String message;
-	
 
-	private AddAccountData data;
+  private String status;
 
-	public String getStatus() {
-		return status;
-	}
+  private String message;
 
-	public void setStatus(String status) {
-		this.status = status;
-	}
+  private AddAccountData data;
 
-	public String getMessage() {
-		return message;
-	}
+  public String getStatus() {
+    return status;
+  }
 
-	public void setMessage(String message) {
-		this.message = message;
-	}
+  public void setStatus(String status) {
+    this.status = status;
+  }
 
-	public AddAccountData getData() {
-		return data;
-	}
+  public String getMessage() {
+    return message;
+  }
 
-	public void setData(AddAccountData data) {
-		this.data = data;
-	}
+  public void setMessage(String message) {
+    this.message = message;
+  }
 
+  public AddAccountData getData() {
+    return data;
+  }
+
+  public void setData(AddAccountData data) {
+    this.data = data;
+  }
 }

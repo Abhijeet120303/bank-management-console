@@ -2,38 +2,33 @@ package dto;
 
 public class AdminResgisterData {
 
-	private String adminEmail;
-	
-	private String password;
-	
-	private String adminId;
+  private String adminEmail;
 
-	public String getAdminEmail() {
-		return adminEmail;
-	}
+  private String password;
 
-	public void setAdminEmail(String adminEmail) {
-		this.adminEmail = adminEmail;
-	}
+  private String adminId;
 
-	public String getPassword() {
-		return password;
-	}
+  public String getAdminEmail() {
+    return adminEmail;
+  }
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
+  public void setAdminEmail(String adminEmail) {
+    this.adminEmail = adminEmail;
+  }
 
-	public String getAdminId() {
-		return adminId;
-	}
+  public String getPassword() {
+    return password;
+  }
 
-	public void setAdminId(String adminId) {
-		this.adminId = adminId;
-	}
+  public void setPassword(String password) {
+    this.password = password;
+  }
 
-	
+  public String getAdminId() {
+    return adminId;
+  }
 
-	
-
+  public void setAdminId(String adminId) {
+    this.adminId = adminId;
+  }
 }

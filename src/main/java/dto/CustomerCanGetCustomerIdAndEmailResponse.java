@@ -1,62 +1,54 @@
 package dto;
 
-
-
 public class CustomerCanGetCustomerIdAndEmailResponse {
-	
-	private String status;
-	
-	private String message;
-	
-	private long customerId;
-	
-	private String EmailId;
-	
-	private String cardNo;
-	
-	
 
-	public String getCardNo() {
-		return cardNo;
-	}
+  private String status;
 
-	public void setCardNo(String cardNo) {
-		this.cardNo = cardNo;
-	}
+  private String message;
 
-	public String getStatus() {
-		return status;
-	}
+  private long customerId;
 
-	public void setStatus(String status) {
-		this.status = status;
-	}
+  private String EmailId;
 
-	public String getMessage() {
-		return message;
-	}
+  private String cardNo;
 
-	public void setMessage(String message) {
-		this.message = message;
-	}
+  public String getCardNo() {
+    return cardNo;
+  }
 
-	public long getCustomerId() {
-		return customerId;
-	}
+  public void setCardNo(String cardNo) {
+    this.cardNo = cardNo;
+  }
 
-	public void setCustomerId(long customerId) {
-		this.customerId = customerId;
-	}
+  public String getStatus() {
+    return status;
+  }
 
-	public String getEmailId() {
-		return EmailId;
-	}
+  public void setStatus(String status) {
+    this.status = status;
+  }
 
-	public void setEmailId(String emailId) {
-		EmailId = emailId;
-	}
-	
-	
+  public String getMessage() {
+    return message;
+  }
 
+  public void setMessage(String message) {
+    this.message = message;
+  }
 
+  public long getCustomerId() {
+    return customerId;
+  }
+
+  public void setCustomerId(long customerId) {
+    this.customerId = customerId;
+  }
+
+  public String getEmailId() {
+    return EmailId;
+  }
+
+  public void setEmailId(String emailId) {
+    EmailId = emailId;
+  }
 }

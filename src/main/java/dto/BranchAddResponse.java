@@ -3,76 +3,74 @@ package dto;
 import java.util.List;
 
 public class BranchAddResponse {
-	
-	private String status;
-	
-	private String message;
-	
-    private String brachName;
-	
-	private String branchCity;
-	
-	private String branchState;
-	
-	private long serialNo;
-	
-	private List<String> branchNames; 
 
-	public List<String> getBranchNames() {
-		return branchNames;
-	}
+  private String status;
 
-	public void setBranchNames(List<String> branchNames) {
-		this.branchNames = branchNames;
-	}
+  private String message;
 
-	public String getStatus() {
-		return status;
-	}
+  private String brachName;
 
-	public void setStatus(String status) {
-		this.status = status;
-	}
+  private String branchCity;
 
-	public String getMessage() {
-		return message;
-	}
+  private String branchState;
 
-	public void setMessage(String message) {
-		this.message = message;
-	}
+  private long serialNo;
 
-	public String getBrachName() {
-		return brachName;
-	}
+  private List<String> branchNames;
 
-	public void setBrachName(String brachName) {
-		this.brachName = brachName;
-	}
+  public List<String> getBranchNames() {
+    return branchNames;
+  }
 
-	public String getBranchCity() {
-		return branchCity;
-	}
+  public void setBranchNames(List<String> branchNames) {
+    this.branchNames = branchNames;
+  }
 
-	public void setBranchCity(String branchCity) {
-		this.branchCity = branchCity;
-	}
+  public String getStatus() {
+    return status;
+  }
 
-	public String getBranchState() {
-		return branchState;
-	}
+  public void setStatus(String status) {
+    this.status = status;
+  }
 
-	public void setBranchState(String branchState) {
-		this.branchState = branchState;
-	}
+  public String getMessage() {
+    return message;
+  }
 
-	public long getSerialNo() {
-		return serialNo;
-	}
+  public void setMessage(String message) {
+    this.message = message;
+  }
 
-	public void setSerialNo(long serialNo) {
-		this.serialNo = serialNo;
-	}
-	
-  
+  public String getBrachName() {
+    return brachName;
+  }
+
+  public void setBrachName(String brachName) {
+    this.brachName = brachName;
+  }
+
+  public String getBranchCity() {
+    return branchCity;
+  }
+
+  public void setBranchCity(String branchCity) {
+    this.branchCity = branchCity;
+  }
+
+  public String getBranchState() {
+    return branchState;
+  }
+
+  public void setBranchState(String branchState) {
+    this.branchState = branchState;
+  }
+
+  public long getSerialNo() {
+    return serialNo;
+  }
+
+  public void setSerialNo(long serialNo) {
+    this.serialNo = serialNo;
+  }
 }

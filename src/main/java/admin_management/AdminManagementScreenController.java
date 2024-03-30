@@ -11,43 +11,40 @@ import javafx.scene.control.Button;
 import update_delete_search_customer.UpdateDeleteSearchCustomerScreen;
 
 public class AdminManagementScreenController {
-	
-	@FXML
-	private Button register;
 
-	@FXML
-	private Button addAccount;
+  @FXML private Button register;
 
-	@FXML
-	private Button dashBoard;
+  @FXML private Button addAccount;
 
-	@FXML
-	private Button addBranch;
+  @FXML private Button dashBoard;
 
-	@FXML
-	private Button searchUpdateDelete;
-	
-	@FXML
-	private Button logout;
-	
-	
-	public void register(ActionEvent event) {
-		new CustomerRegister().show();
-	}
-	public void addAccount(ActionEvent event) {
-		new AddAccount().show();
-	}
+  @FXML private Button addBranch;
 
-	public void dashBoard(ActionEvent event) {
-		new AdminDashboardScreen().show();
-	}
-	public void addBranch(ActionEvent event) {
-		new AddBranchScreen().show();
-	}
-	public void searchUpdateDelete(ActionEvent event) {
-		new UpdateDeleteSearchCustomerScreen().show();
-	}
-	public void logout(ActionEvent event) {
-		new AdminLogin().show();
-	}
+  @FXML private Button searchUpdateDelete;
+
+  @FXML private Button logout;
+
+  public void register(ActionEvent event) {
+    new CustomerRegister().show();
+  }
+
+  public void addAccount(ActionEvent event) {
+    new AddAccount().show();
+  }
+
+  public void dashBoard(ActionEvent event) {
+    new AdminDashboardScreen().show();
+  }
+
+  public void addBranch(ActionEvent event) {
+    new AddBranchScreen().show();
+  }
+
+  public void searchUpdateDelete(ActionEvent event) {
+    new UpdateDeleteSearchCustomerScreen().show();
+  }
+
+  public void logout(ActionEvent event) {
+    new AdminLogin().show();
+  }
 }

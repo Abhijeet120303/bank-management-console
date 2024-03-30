@@ -1,102 +1,117 @@
 package common;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 public class RestUtil {
-	private static final ObjectMapper objectMapper = new ObjectMapper();
+  private static final ObjectMapper objectMapper = new ObjectMapper();
 
-	public static <T> T sendGetRequest(String url, Class<T> responseType) throws IOException, InterruptedException {
+  public static <T> T sendGetRequest(String url, Class<T> responseType)
+      throws IOException, InterruptedException {
 
-		HttpClient client = HttpClient.newHttpClient();
+    HttpClient client = HttpClient.newHttpClient();
 
-		HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).header("Content-Type", "application/json")
-				.GET().build();// object
+    HttpRequest request =
+        HttpRequest.newBuilder()
+            .uri(URI.create(url))
+            .header("Content-Type", "application/json")
+            .GET()
+            .build(); // object
 
-		HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+    HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
-		T userResponse = objectMapper.readValue(response.body(), responseType);
+    T userResponse = objectMapper.readValue(response.body(), responseType);
 
-		return userResponse;
-	}
+    return userResponse;
+  }
 
-	public static <T> T sendPostRequest(String url, Class<T> responseType, Object userPostRequest)
-			throws IOException, InterruptedException {// Reusable
+  public static <T> T sendPostRequest(String url, Class<T> responseType, Object userPostRequest)
+      throws IOException, InterruptedException { // Reusable
 
-		String jsonRequestAsString = objectMapper.writeValueAsString(userPostRequest);
+    String jsonRequestAsString = objectMapper.writeValueAsString(userPostRequest);
 
-		HttpClient client = HttpClient.newHttpClient();
+    HttpClient client = HttpClient.newHttpClient();
 
-		HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).header("Content-Type", "application/json")
-				.POST(HttpRequest.BodyPublishers.ofString(jsonRequestAsString)).build();
+    HttpRequest request =
+        HttpRequest.newBuilder()
+            .uri(URI.create(url))
+            .header("Content-Type", "application/json")
+            .POST(HttpRequest.BodyPublishers.ofString(jsonRequestAsString))
+            .build();
 
-		HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+    HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
-		T userResponse = objectMapper.readValue(response.body(), responseType);
+    T userResponse = objectMapper.readValue(response.body(), responseType);
 
-//		System.out.println("Response is : " + response.body());
+    //		System.out.println("Response is : " + response.body());
 
-		return userResponse;
-	}
+    return userResponse;
+  }
 
-	public static <T> T sendPutRequest(String url, Class<T> responseType, Object requestObject)
-			throws IOException, InterruptedException {
-		String jsonRequestAsString = objectMapper.writeValueAsString(requestObject);
+  public static <T> T sendPutRequest(String url, Class<T> responseType, Object requestObject)
+      throws IOException, InterruptedException {
+    String jsonRequestAsString = objectMapper.writeValueAsString(requestObject);
 
-		HttpClient client = HttpClient.newHttpClient();
-		HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).header("Content-Type", "application/json")
-				.PUT(HttpRequest.BodyPublishers.ofString(jsonRequestAsString)).build();
+    HttpClient client = HttpClient.newHttpClient();
+    HttpRequest request =
+        HttpRequest.newBuilder()
+            .uri(URI.create(url))
+            .header("Content-Type", "application/json")
+            .PUT(HttpRequest.BodyPublishers.ofString(jsonRequestAsString))
+            .build();
 
-		HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+    HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
-		T userResponse = objectMapper.readValue(response.body(), responseType);
+    T userResponse = objectMapper.readValue(response.body(), responseType);
 
-		return userResponse;
-	}
+    return userResponse;
+  }
 
-	public static <T> T sendDeleteRequest(String url, Class<T> responseType) throws IOException, InterruptedException {
-		HttpClient client = HttpClient.newHttpClient();
-		HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).header("Content-Type", "application/json")
-				.DELETE().build();
+  public static <T> T sendDeleteRequest(String url, Class<T> responseType)
+      throws IOException, InterruptedException {
+    HttpClient client = HttpClient.newHttpClient();
+    HttpRequest request =
+        HttpRequest.newBuilder()
+            .uri(URI.create(url))
+            .header("Content-Type", "application/json")
+            .DELETE()
+            .build();
 
-		HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+    HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
-		T userResponse = objectMapper.readValue(response.body(), responseType);
+    T userResponse = objectMapper.readValue(response.body(), responseType);
 
-		return userResponse;
-	}
+    return userResponse;
+  }
 
-	public static <T> T sendGetRequests(String url, TypeReference<T> responseType)
-            throws IOException, InterruptedException {
-        try {
-            HttpClient client = HttpClient.newHttpClient();
+  public static <T> T sendGetRequests(String url, TypeReference<T> responseType)
+      throws IOException, InterruptedException {
+    try {
+      HttpClient client = HttpClient.newHttpClient();
 
-            HttpRequest request = HttpRequest.newBuilder()
-                    .uri(URI.create(url))
-                    .header("Content-Type", "application/json")
-                    .GET()
-                    .build();
+      HttpRequest request =
+          HttpRequest.newBuilder()
+              .uri(URI.create(url))
+              .header("Content-Type", "application/json")
+              .GET()
+              .build();
 
-            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+      HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
-            if (response.statusCode() != 200) {
-                // Handle non-successful HTTP status code, if needed
-                throw new IOException("HTTP error: " + response.statusCode());
-            }
+      if (response.statusCode() != 200) {
+        // Handle non-successful HTTP status code, if needed
+        throw new IOException("HTTP error: " + response.statusCode());
+      }
 
-            return objectMapper.readValue(response.body(), responseType);
-        } catch (IOException | InterruptedException e) {
-            // Handle exceptions appropriately
-            throw e;
-        }
+      return objectMapper.readValue(response.body(), responseType);
+    } catch (IOException | InterruptedException e) {
+      // Handle exceptions appropriately
+      throw e;
     }
-
-	
-
+  }
 }

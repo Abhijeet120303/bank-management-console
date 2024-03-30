@@ -1,76 +1,73 @@
 package dto;
 
 public class AddAccountData {
-	private String customerId;
-	
-	private String cardNo;
-	
-	private String accountType;
-	
-	private String balance;
-	
-	private String atmPin;
-	
-	private String accountStatus;
-	
-	private long serialNo;
+  private String customerId;
 
+  private String cardNo;
 
-	public String getCustomerId() {
-		return customerId;
-	}
+  private String accountType;
 
-	public void setCustomerId(String customerId) {
-		this.customerId = customerId;
-	}
+  private String balance;
 
-	public String getCardNo() {
-		return cardNo;
-	}
+  private String atmPin;
 
-	public void setCardNo(String cardNo) {
-		this.cardNo = cardNo;
-	}
+  private String accountStatus;
 
-	public String getAccountType() {
-		return accountType;
-	}
+  private long serialNo;
 
-	public void setAccountType(String accountType) {
-		this.accountType = accountType;
-	}
+  public String getCustomerId() {
+    return customerId;
+  }
 
-	public String getBalance() {
-		return balance;
-	}
+  public void setCustomerId(String customerId) {
+    this.customerId = customerId;
+  }
 
-	public void setBalance(String balance) {
-		this.balance = balance;
-	}
+  public String getCardNo() {
+    return cardNo;
+  }
 
-	public String getAtmPin() {
-		return atmPin;
-	}
+  public void setCardNo(String cardNo) {
+    this.cardNo = cardNo;
+  }
 
-	public void setAtmPin(String atmPin) {
-		this.atmPin = atmPin;
-	}
+  public String getAccountType() {
+    return accountType;
+  }
 
-	public String getAccountStatus() {
-		return accountStatus;
-	}
+  public void setAccountType(String accountType) {
+    this.accountType = accountType;
+  }
 
-	public void setAccountStatus(String accountStatus) {
-		this.accountStatus = accountStatus;
-	}
+  public String getBalance() {
+    return balance;
+  }
 
-	public long getSerialNo() {
-		return serialNo;
-	}
+  public void setBalance(String balance) {
+    this.balance = balance;
+  }
 
-	public void setSerialNo(long serialNo) {
-		this.serialNo = serialNo;
-	}
+  public String getAtmPin() {
+    return atmPin;
+  }
 
+  public void setAtmPin(String atmPin) {
+    this.atmPin = atmPin;
+  }
 
+  public String getAccountStatus() {
+    return accountStatus;
+  }
+
+  public void setAccountStatus(String accountStatus) {
+    this.accountStatus = accountStatus;
+  }
+
+  public long getSerialNo() {
+    return serialNo;
+  }
+
+  public void setSerialNo(long serialNo) {
+    this.serialNo = serialNo;
+  }
 }

@@ -1,50 +1,44 @@
 package dto;
 
 public class BranchAddRequest {
-	
-	private String branchName;
-	
-	private String branchCity;
-	
-	private String branchState;
-	
-    private long serialNo;
 
-	
+  private String branchName;
 
-	public String getBranchName() {
-		return branchName;
-	}
+  private String branchCity;
 
-	public void setBranchName(String branchName) {
-		this.branchName = branchName;
-	}
+  private String branchState;
 
-	public String getBranchCity() {
-		return branchCity;
-	}
+  private long serialNo;
 
-	public void setBranchCity(String branchCity) {
-		this.branchCity = branchCity;
-	}
+  public String getBranchName() {
+    return branchName;
+  }
 
-	public String getBranchState() {
-		return branchState;
-	}
+  public void setBranchName(String branchName) {
+    this.branchName = branchName;
+  }
 
-	public void setBranchState(String branchState) {
-		this.branchState = branchState;
-	}
+  public String getBranchCity() {
+    return branchCity;
+  }
 
-	public long getSerialNo() {
-		return serialNo;
-	}
+  public void setBranchCity(String branchCity) {
+    this.branchCity = branchCity;
+  }
 
-	public void setSerialNo(long serialNo) {
-		this.serialNo = serialNo;
-	}
+  public String getBranchState() {
+    return branchState;
+  }
 
-	
+  public void setBranchState(String branchState) {
+    this.branchState = branchState;
+  }
 
+  public long getSerialNo() {
+    return serialNo;
+  }
 
+  public void setSerialNo(long serialNo) {
+    this.serialNo = serialNo;
+  }
 }

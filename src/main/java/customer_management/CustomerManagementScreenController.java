@@ -13,61 +13,52 @@ import javafx.scene.control.Button;
 import withdraw_amount.WithDrawAmount;
 
 public class CustomerManagementScreenController {
-	@FXML
-	private Button accountBalance;
+  @FXML private Button accountBalance;
 
-	@FXML
-	private Button deposit;
+  @FXML private Button deposit;
 
-	@FXML
-	private Button accountTransfer;
+  @FXML private Button accountTransfer;
 
-	@FXML
-	private Button withDrawCash;
+  @FXML private Button withDrawCash;
 
-	@FXML
-	private Button transactionHistory;
+  @FXML private Button transactionHistory;
 
-	@FXML
-	private Button changePin;
+  @FXML private Button changePin;
 
-	@FXML
-	private Button customerDetails;
+  @FXML private Button customerDetails;
 
-	@FXML
-	private Button logout;
+  @FXML private Button logout;
 
-	public void accountBalance(ActionEvent event) {
-		
-		new AccountBalanceScreen().show();
-	}
+  public void accountBalance(ActionEvent event) {
 
-	public void deposit(ActionEvent event) {
-		new Deposit().show();
-	}
+    new AccountBalanceScreen().show();
+  }
 
-	public void accountTransfer(ActionEvent event) {
-		new AccountTransfer().show();
-	}
+  public void deposit(ActionEvent event) {
+    new Deposit().show();
+  }
 
-	public void withDrawCash(ActionEvent event) {
-		new WithDrawAmount().show();
-	}
+  public void accountTransfer(ActionEvent event) {
+    new AccountTransfer().show();
+  }
 
-	public void transactionHistory(ActionEvent event) {
-		new TransactionHistory().show();
-	}
+  public void withDrawCash(ActionEvent event) {
+    new WithDrawAmount().show();
+  }
 
-	public void changePin(ActionEvent event) {
-		new ChangePin().show();
-	}
+  public void transactionHistory(ActionEvent event) {
+    new TransactionHistory().show();
+  }
 
-	public void customerDetails(ActionEvent event) {
-		new AccountDetails().show();
-	}
+  public void changePin(ActionEvent event) {
+    new ChangePin().show();
+  }
 
-	public void logout(ActionEvent event) {
-		new HomeScreen().show();
-	}
+  public void customerDetails(ActionEvent event) {
+    new AccountDetails().show();
+  }
 
+  public void logout(ActionEvent event) {
+    new HomeScreen().show();
+  }
 }

@@ -1,73 +1,64 @@
 package total_customer_bank_transactions;
 
-import java.time.LocalDateTime;
-
 public class Transactions {
-	
 
-	private String transactionId;
-	
-	private String customerId;
+  private String transactionId;
 
-	private String cardNo;
+  private String customerId;
 
-	private String balance;
+  private String cardNo;
 
-	private String transactionType;
+  private String balance;
 
-	private String transactionDate;
+  private String transactionType;
 
-	public String getTransactionId() {
-		return transactionId;
-	}
+  private String transactionDate;
 
-	public void setTransactionId(String transactionId) {
-		this.transactionId = transactionId;
-	}
+  public String getTransactionId() {
+    return transactionId;
+  }
 
-	public String getCustomerId() {
-		return customerId;
-	}
+  public void setTransactionId(String transactionId) {
+    this.transactionId = transactionId;
+  }
 
-	public void setCustomerId(String customerId) {
-		this.customerId = customerId;
-	}
+  public String getCustomerId() {
+    return customerId;
+  }
 
-	public String getCardNo() {
-		return cardNo;
-	}
+  public void setCustomerId(String customerId) {
+    this.customerId = customerId;
+  }
 
-	public void setCardNo(String cardNo) {
-		this.cardNo = cardNo;
-	}
+  public String getCardNo() {
+    return cardNo;
+  }
 
-	public String getBalance() {
-		return balance;
-	}
+  public void setCardNo(String cardNo) {
+    this.cardNo = cardNo;
+  }
 
-	public void setBalance(String balance) {
-		this.balance = balance;
-	}
+  public String getBalance() {
+    return balance;
+  }
 
-	public String getTransactionType() {
-		return transactionType;
-	}
+  public void setBalance(String balance) {
+    this.balance = balance;
+  }
 
-	public void setTransactionType(String transactionType) {
-		this.transactionType = transactionType;
-	}
+  public String getTransactionType() {
+    return transactionType;
+  }
 
-	public String getTransactionDate() {
-		return transactionDate;
-	}
+  public void setTransactionType(String transactionType) {
+    this.transactionType = transactionType;
+  }
 
-	public void setTransactionDate(String transactionDate) {
-		this.transactionDate = transactionDate;
-	}
+  public String getTransactionDate() {
+    return transactionDate;
+  }
 
-	
-	
-
-
-	
+  public void setTransactionDate(String transactionDate) {
+    this.transactionDate = transactionDate;
+  }
 }

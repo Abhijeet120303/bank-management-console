@@ -1,47 +1,44 @@
 package dto;
 
 public class CustomerTranferAmountRequest {
-	
-	private String fromcardNo;
-	
-	private String tocardNo;
-	
-    private double balance;
-	
-	private String atmPin;
 
-	public String getFromcardNo() {
-		return fromcardNo;
-	}
+  private String fromcardNo;
 
-	public void setFromcardNo(String fromcardNo) {
-		this.fromcardNo = fromcardNo;
-	}
+  private String tocardNo;
 
-	public String getTocardNo() {
-		return tocardNo;
-	}
+  private double balance;
 
-	public void setTocardNo(String tocardNo) {
-		this.tocardNo = tocardNo;
-	}
+  private String atmPin;
 
-	public double getBalance() {
-		return balance;
-	}
+  public String getFromcardNo() {
+    return fromcardNo;
+  }
 
-	public void setBalance(double d) {
-		this.balance = d;
-	}
+  public void setFromcardNo(String fromcardNo) {
+    this.fromcardNo = fromcardNo;
+  }
 
-	public String getAtmPin() {
-		return atmPin;
-	}
+  public String getTocardNo() {
+    return tocardNo;
+  }
 
-	public void setAtmPin(String atmPin) {
-		this.atmPin = atmPin;
-	}
+  public void setTocardNo(String tocardNo) {
+    this.tocardNo = tocardNo;
+  }
 
-	
+  public double getBalance() {
+    return balance;
+  }
 
+  public void setBalance(double d) {
+    this.balance = d;
+  }
+
+  public String getAtmPin() {
+    return atmPin;
+  }
+
+  public void setAtmPin(String atmPin) {
+    this.atmPin = atmPin;
+  }
 }

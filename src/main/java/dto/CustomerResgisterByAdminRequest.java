@@ -1,119 +1,114 @@
 package dto;
 
-import java.time.LocalDate;
-
-
 public class CustomerResgisterByAdminRequest {
-	
-	private String firstName;
-	
-	private String lastName;
-	
-	private String dateOfBirth;
-	
-	private String  mobileNo;
-	
-	private String emailId;
-	
-	private String gender;
-		
-	private String branch;
-	
-	private String passsword;
-	
-	private String permanentAddress;
-	
-	private String presentAddress;
-	
-	private String registerDate;
 
-	public String getRegisterDate() {
-		return registerDate;
-	}
+  private String firstName;
 
-	public void setRegisterDate(String registerDate) {
-		this.registerDate = registerDate;
-	}
+  private String lastName;
 
-	public String getFirstName() {
-		return firstName;
-	}
+  private String dateOfBirth;
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
+  private String mobileNo;
 
-	public String getLastName() {
-		return lastName;
-	}
+  private String emailId;
 
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
+  private String gender;
 
-	public String getDateOfBirth() {
-		return dateOfBirth;
-	}
+  private String branch;
 
-	public void setDateOfBirth(String dateOfBirth) {
-		this.dateOfBirth = dateOfBirth;
-	}
+  private String passsword;
 
-	public String getMobileNo() {
-		return mobileNo;
-	}
+  private String permanentAddress;
 
-	public void setMobileNo(String mobileNo) {
-		this.mobileNo = mobileNo;
-	}
+  private String presentAddress;
 
-	public String getEmailId() {
-		return emailId;
-	}
+  private String registerDate;
 
-	public void setEmailId(String emailId) {
-		this.emailId = emailId;
-	}
+  public String getRegisterDate() {
+    return registerDate;
+  }
 
-	public String getGender() {
-		return gender;
-	}
+  public void setRegisterDate(String registerDate) {
+    this.registerDate = registerDate;
+  }
 
-	public void setGender(String gender) {
-		this.gender = gender;
-	}
+  public String getFirstName() {
+    return firstName;
+  }
 
-	public String getBranch() {
-		return branch;
-	}
+  public void setFirstName(String firstName) {
+    this.firstName = firstName;
+  }
 
-	public void setBranch(String branch) {
-		this.branch = branch;
-	}
+  public String getLastName() {
+    return lastName;
+  }
 
-	public String getPasssword() {
-		return passsword;
-	}
+  public void setLastName(String lastName) {
+    this.lastName = lastName;
+  }
 
-	public void setPasssword(String passsword) {
-		this.passsword = passsword;
-	}
+  public String getDateOfBirth() {
+    return dateOfBirth;
+  }
 
-	public String getPermanentAddress() {
-		return permanentAddress;
-	}
+  public void setDateOfBirth(String dateOfBirth) {
+    this.dateOfBirth = dateOfBirth;
+  }
 
-	public void setPermanentAddress(String permanentAddress) {
-		this.permanentAddress = permanentAddress;
-	}
+  public String getMobileNo() {
+    return mobileNo;
+  }
 
-	public String getPresentAddress() {
-		return presentAddress;
-	}
+  public void setMobileNo(String mobileNo) {
+    this.mobileNo = mobileNo;
+  }
 
-	public void setPresentAddress(String presentAddress) {
-		this.presentAddress = presentAddress;
-	}
-	
+  public String getEmailId() {
+    return emailId;
+  }
 
+  public void setEmailId(String emailId) {
+    this.emailId = emailId;
+  }
+
+  public String getGender() {
+    return gender;
+  }
+
+  public void setGender(String gender) {
+    this.gender = gender;
+  }
+
+  public String getBranch() {
+    return branch;
+  }
+
+  public void setBranch(String branch) {
+    this.branch = branch;
+  }
+
+  public String getPasssword() {
+    return passsword;
+  }
+
+  public void setPasssword(String passsword) {
+    this.passsword = passsword;
+  }
+
+  public String getPermanentAddress() {
+    return permanentAddress;
+  }
+
+  public void setPermanentAddress(String permanentAddress) {
+    this.permanentAddress = permanentAddress;
+  }
+
+  public String getPresentAddress() {
+    return presentAddress;
+  }
+
+  public void setPresentAddress(String presentAddress) {
+    this.presentAddress = presentAddress;
+  }
 }

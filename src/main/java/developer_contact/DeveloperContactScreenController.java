@@ -6,11 +6,10 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
 public class DeveloperContactScreenController {
-	@FXML
-    private Button back;
+  @FXML private Button back;
 
-    @FXML
-    public void back(ActionEvent event) {
-        new HomeScreen().show();
-    }
+  @FXML
+  public void back(ActionEvent event) {
+    new HomeScreen().show();
+  }
 }

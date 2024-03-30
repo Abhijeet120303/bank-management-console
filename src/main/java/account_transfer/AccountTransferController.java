@@ -13,66 +13,62 @@ import javafx.scene.control.TextField;
 
 public class AccountTransferController {
 
-    @FXML
-    private TextField fromAccountNumber;
+  @FXML private TextField fromAccountNumber;
 
-    @FXML
-    private TextField toAccountNumber;
+  @FXML private TextField toAccountNumber;
 
-    @FXML
-    private TextField amount;
+  @FXML private TextField amount;
 
-    @FXML
-    private TextField pin;
+  @FXML private TextField pin;
 
-    @FXML
-    private Button accountTransfer;
+  @FXML private Button accountTransfer;
 
-    @FXML
-    private Button back;
+  @FXML private Button back;
 
-    @FXML
-    private Label messageLabel;
+  @FXML private Label messageLabel;
 
-    public void accountTransfer(ActionEvent event) {
-        CustomerTranferAmountRequest transferRequest = new CustomerTranferAmountRequest();
-        transferRequest.setFromcardNo(fromAccountNumber.getText());
-        transferRequest.setTocardNo(toAccountNumber.getText());
-        transferRequest.setBalance(Double.parseDouble(amount.getText()));
-        transferRequest.setAtmPin(pin.getText());
+  public void accountTransfer(ActionEvent event) {
+    CustomerTranferAmountRequest transferRequest = new CustomerTranferAmountRequest();
+    transferRequest.setFromcardNo(fromAccountNumber.getText());
+    transferRequest.setTocardNo(toAccountNumber.getText());
+    transferRequest.setBalance(Double.parseDouble(amount.getText()));
+    transferRequest.setAtmPin(pin.getText());
 
-        try {
-            CustomerTransferAmountResponse transferResponse = RestUtil.sendPostRequest(
-                    "http://localhost:8081/api/v1/customer/transfer/balance", CustomerTransferAmountResponse.class,
-                    transferRequest);
+    try {
+      CustomerTransferAmountResponse transferResponse =
+          RestUtil.sendPostRequest(
+              "http://localhost:8081/api/v1/customer/transfer/balance",
+              CustomerTransferAmountResponse.class,
+              transferRequest);
 
-            if ("Success".equalsIgnoreCase(transferResponse.getStatus())) {
-                showAlert("Success", "Amount Transferred Successfully");
-            } else if ("Fail".equalsIgnoreCase(transferResponse.getStatus())) {
-                showAlert("Error", transferResponse.getMessage());
+      if ("Success".equalsIgnoreCase(transferResponse.getStatus())) {
+        showAlert("Success", "Amount Transferred Successfully");
+      } else if ("Fail".equalsIgnoreCase(transferResponse.getStatus())) {
+        showAlert("Error", transferResponse.getMessage());
 
-                if ("Your Account Has Been Locked. Please Contact The Admin".equalsIgnoreCase(transferResponse.getMessage())) {
-                    showAlert("Account Locked", "Your account has been locked. Please contact the admin.");
-                }
-            }
-
-            messageLabel.setText(transferResponse.getStatus() + ": " + transferResponse.getMessage());
-
-        } catch (Exception e) {
-            e.printStackTrace();
-            showAlert("Error", "Something went wrong. Please try again.");
+        if ("Your Account Has Been Locked. Please Contact The Admin"
+            .equalsIgnoreCase(transferResponse.getMessage())) {
+          showAlert("Account Locked", "Your account has been locked. Please contact the admin.");
         }
-    }
+      }
 
-    private void showAlert(String title, String content) {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle(title);
-        alert.setHeaderText(null);
-        alert.setContentText(content);
-        alert.showAndWait();
-    }
+      messageLabel.setText(transferResponse.getStatus() + ": " + transferResponse.getMessage());
 
-    public void back(ActionEvent event) {
-        new CustomerManagementScreen().show();
+    } catch (Exception e) {
+      e.printStackTrace();
+      showAlert("Error", "Something went wrong. Please try again.");
     }
+  }
+
+  private void showAlert(String title, String content) {
+    Alert alert = new Alert(Alert.AlertType.INFORMATION);
+    alert.setTitle(title);
+    alert.setHeaderText(null);
+    alert.setContentText(content);
+    alert.showAndWait();
+  }
+
+  public void back(ActionEvent event) {
+    new CustomerManagementScreen().show();
+  }
 }

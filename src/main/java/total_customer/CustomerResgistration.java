@@ -1,129 +1,124 @@
 package total_customer;
 
-import java.time.LocalDate;
-
 public class CustomerResgistration {
-	
-	private String customerId;
 
-	private String firstName;
-	
-	private String lastName;
-	
-	private String dateOfBirth;
+  private String customerId;
 
-	private String  mobileNo;
-	
-	private String emailId;
-	
-	private String gender;
+  private String firstName;
 
-	private String branch;
-	
-	private String password;
-	
-	private String permanentAddress;
-	
-	private String presentAddress;
-	
-	private String registerDate;
+  private String lastName;
 
-	public String getRegisterDate() {
-		return registerDate;
-	}
+  private String dateOfBirth;
 
-	public void setRegisterDate(String registerDate) {
-		this.registerDate = registerDate;
-	}
+  private String mobileNo;
 
-	public String getCustomerId() {
-		return customerId;
-	}
+  private String emailId;
 
-	public void setCustomerId(String customerId) {
-		this.customerId = customerId;
-	}
+  private String gender;
 
-	public String getFirstName() {
-		return firstName;
-	}
+  private String branch;
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
+  private String password;
 
-	public String getLastName() {
-		return lastName;
-	}
+  private String permanentAddress;
 
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
+  private String presentAddress;
 
-	public String getDateOfBirth() {
-		return dateOfBirth;
-	}
+  private String registerDate;
 
-	public void setDateOfBirth(String dateOfBirth) {
-		this.dateOfBirth = dateOfBirth;
-	}
+  public String getRegisterDate() {
+    return registerDate;
+  }
 
-	public String getMobileNo() {
-		return mobileNo;
-	}
+  public void setRegisterDate(String registerDate) {
+    this.registerDate = registerDate;
+  }
 
-	public void setMobileNo(String mobileNo) {
-		this.mobileNo = mobileNo;
-	}
+  public String getCustomerId() {
+    return customerId;
+  }
 
-	public String getEmailId() {
-		return emailId;
-	}
+  public void setCustomerId(String customerId) {
+    this.customerId = customerId;
+  }
 
-	public void setEmailId(String emailId) {
-		this.emailId = emailId;
-	}
+  public String getFirstName() {
+    return firstName;
+  }
 
-	public String getGender() {
-		return gender;
-	}
+  public void setFirstName(String firstName) {
+    this.firstName = firstName;
+  }
 
-	public void setGender(String gender) {
-		this.gender = gender;
-	}
+  public String getLastName() {
+    return lastName;
+  }
 
-	public String getBranch() {
-		return branch;
-	}
+  public void setLastName(String lastName) {
+    this.lastName = lastName;
+  }
 
-	public void setBranch(String branch) {
-		this.branch = branch;
-	}
+  public String getDateOfBirth() {
+    return dateOfBirth;
+  }
 
-	public String getPassword() {
-		return password;
-	}
+  public void setDateOfBirth(String dateOfBirth) {
+    this.dateOfBirth = dateOfBirth;
+  }
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
+  public String getMobileNo() {
+    return mobileNo;
+  }
 
-	public String getPermanentAddress() {
-		return permanentAddress;
-	}
+  public void setMobileNo(String mobileNo) {
+    this.mobileNo = mobileNo;
+  }
 
-	public void setPermanentAddress(String permanentAddress) {
-		this.permanentAddress = permanentAddress;
-	}
+  public String getEmailId() {
+    return emailId;
+  }
 
-	public String getPresentAddress() {
-		return presentAddress;
-	}
+  public void setEmailId(String emailId) {
+    this.emailId = emailId;
+  }
 
-	public void setPresentAddress(String presentAddress) {
-		this.presentAddress = presentAddress;
-	}
+  public String getGender() {
+    return gender;
+  }
 
-	
+  public void setGender(String gender) {
+    this.gender = gender;
+  }
 
+  public String getBranch() {
+    return branch;
+  }
+
+  public void setBranch(String branch) {
+    this.branch = branch;
+  }
+
+  public String getPassword() {
+    return password;
+  }
+
+  public void setPassword(String password) {
+    this.password = password;
+  }
+
+  public String getPermanentAddress() {
+    return permanentAddress;
+  }
+
+  public void setPermanentAddress(String permanentAddress) {
+    this.permanentAddress = permanentAddress;
+  }
+
+  public String getPresentAddress() {
+    return presentAddress;
+  }
+
+  public void setPresentAddress(String presentAddress) {
+    this.presentAddress = presentAddress;
+  }
 }

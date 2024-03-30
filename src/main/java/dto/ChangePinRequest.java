@@ -1,46 +1,44 @@
 package dto;
 
 public class ChangePinRequest {
-	
-	private String currPin;
-	
-	private String newPin;
-	
-	private String repeateNewPin;
-	
-	private String cardNumber;
 
-	public String getCardNumber() {
-		return cardNumber;
-	}
+  private String currPin;
 
-	public void setCardNumber(String cardNumber) {
-		this.cardNumber = cardNumber;
-	}
+  private String newPin;
 
-	public String getCurrPin() {
-		return currPin;
-	}
+  private String repeateNewPin;
 
-	public void setCurrPin(String currPin) {
-		this.currPin = currPin;
-	}
+  private String cardNumber;
 
-	public String getNewPin() {
-		return newPin;
-	}
+  public String getCardNumber() {
+    return cardNumber;
+  }
 
-	public void setNewPin(String newPin) {
-		this.newPin = newPin;
-	}
+  public void setCardNumber(String cardNumber) {
+    this.cardNumber = cardNumber;
+  }
 
-	public String getRepeateNewPin() {
-		return repeateNewPin;
-	}
+  public String getCurrPin() {
+    return currPin;
+  }
 
-	public void setRepeateNewPin(String repeateNewPin) {
-		this.repeateNewPin = repeateNewPin;
-	}
-	
-	
+  public void setCurrPin(String currPin) {
+    this.currPin = currPin;
+  }
+
+  public String getNewPin() {
+    return newPin;
+  }
+
+  public void setNewPin(String newPin) {
+    this.newPin = newPin;
+  }
+
+  public String getRepeateNewPin() {
+    return repeateNewPin;
+  }
+
+  public void setRepeateNewPin(String repeateNewPin) {
+    this.repeateNewPin = repeateNewPin;
+  }
 }
